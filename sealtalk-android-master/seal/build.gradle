@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+
+android {
+//    compileSdkVersion 23
+//    buildToolsVersion "23.0.2"
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "cn.rongcloud.im"
+        minSdkVersion 11
+        targetSdkVersion 23
+        versionCode 2016072620 
+        versionName "2.6.8 Dev"
+//        multiDexEnabled true
+    }
+
+//    dexOptions {
+//        preDexLibraries = false
+//        javaMaxHeapSize "2g"
+//
+//    }
+
+    signingConfigs {
+        config {
+            storeFile file("rong.key")
+            storePassword "Amigo123"
+            keyAlias "RongCloud"
+            keyPassword "Amigo123"
+        }
+    }
+    sourceSets {
+        main {
+            jni.srcDirs = []
+            jniLibs.srcDirs = ['src/main/libs']
+        }
+    }
+    packagingOptions {
+        exclude 'AndroidManifest.xml'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.config //for release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.config //for release
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+
+        abortOnError false
+    }
+}
+
+repositories {
+    maven { url "https://jitpack.io"}
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //    compile 'com.android.support:appcompat-v7:19.1.0'
+    //    compile 'com.android.support:support-v4:21.0.3'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+//    compile 'com.android.support:design:23.2.1'
+    // libs 中 happy dns.jar - okhttp.jar - okio.jar 为 qiniu存储所需依赖jar 融云 sdk 和你的 app 中都无需依赖
+    compile files('libs/Android_Location_V1.3.3.jar')
+    compile files('libs/universal-image-loader-1.9.5.jar')
+    // org.apache.http.legacy.jar 为适配 Android tagetId 22 以上 jar
+    compile files('libs/org.apache.http.legacy.jar')
+    compile files('libs/jsoup-1.8.3.jar')
+    compile project(':IMKit')
+    compile files('libs/hellocharts-library-1.5.8.jar')
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.1'
+}
+apply plugin: 'com.google.gms.google-services'

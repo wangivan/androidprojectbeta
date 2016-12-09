@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:more="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/searchbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:drawableLeft="@drawable/searchbox3"
+        android:hint="遇到问题搜一搜"
+        android:drawablePadding="20dp"
+        android:singleLine="true"
+        android:ems="10"
+        android:background="@drawable/rounded_edittext"
+        android:paddingTop="10dp">
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_launcher"
+            android:gravity="center"
+
+            android:id="@+id/oko"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的反馈"
+            android:textColor="#242424"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="反馈记录"
+            android:paddingLeft="200dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="热点问题"
+        android:background="#E8E8E8"
+        android:paddingBottom="20dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <cn.rongcloud.im.ui.widget.MoreTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                more:moretextColor="@android:color/black"
+                more:moretextSize="18dip"
+                more:maxLine="1"
+                more:text="千千锁屏掉线，收不到消息。不知道改怎么办？到底应该"/>
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll"
+                android:background="@android:color/black" />
+
+            <cn.rongcloud.im.ui.widget.MoreTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                more:moretextColor="@android:color/black"
+                more:moretextSize="18dip"
+                more:maxLine="1"
+                more:text="魔兽争霸服务器难以登陆，无法正常使用，感觉身体被掏空，不像在完了"/>
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll"
+                android:background="@android:color/black" />
+
+            <cn.rongcloud.im.ui.widget.MoreTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                more:moretextColor="@android:color/black"
+                more:moretextSize="18dip"
+                more:maxLine="1"
+                more:text="魔兽世纪服务器难以登陆，无法正常使用，感觉身体被掏空，不像在完了"/>
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll"
+                android:background="@android:color/black" />
+            <cn.rongcloud.im.ui.widget.MoreTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                more:moretextColor="@android:color/black"
+                more:moretextSize="18dip"
+                more:maxLine="1"
+                more:text="英雄联盟服务器难以登陆，无法正常使用，感觉身体被掏空，不像在完了"/>
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll"
+                android:background="@android:color/black" />
+
+            <cn.rongcloud.im.ui.widget.MoreTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                more:moretextColor="@android:color/black"
+                more:moretextSize="18dip"
+                more:maxLine="1"
+                more:text="dota2服务器难以登陆，无法正常使用，感觉身体被掏空，不像在完了"/>
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll"
+                android:background="@android:color/black" />
+
+            <cn.rongcloud.im.ui.widget.MoreTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                more:moretextColor="@android:color/black"
+                more:moretextSize="18dip"
+                more:maxLine="1"
+                more:text="dota2服务器难以登陆，无法正常使用，感觉身体被掏空，不像在完了"/>
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll"
+                android:background="@android:color/black" />
+
+            <cn.rongcloud.im.ui.widget.MoreTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                more:moretextColor="@android:color/black"
+                more:moretextSize="18dip"
+                more:maxLine="1"
+                more:text="dota2服务器难以登陆，无法正常使用，感觉身体被掏空，不像在完了"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_launcher"
+            android:gravity="center"
+
+            android:id="@+id/oko1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="意见反馈"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(功能建议，系统问题等)"/>
+
+    </LinearLayout>
+</LinearLayout>

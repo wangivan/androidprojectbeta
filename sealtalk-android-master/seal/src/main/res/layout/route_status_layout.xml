@@ -1,0 +1,316 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:text="内存使用率"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:text="CPU使用率"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="212dp"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/blue">
+
+    <cn.rongcloud.im.ui.widget.RoundProgressBar
+        android:id="@+id/barStrokeText"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:backColor="@color/gray"
+        app:frontColor="@color/blue"
+        app:mode="STROKE_TEXT"
+        app:textColor="@color/red"
+        app:textSize="18sp"
+        android:layout_marginLeft="8dp"
+        />
+
+    <cn.rongcloud.im.ui.widget.RoundProgressBar
+        android:id="@+id/barStroke"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="60dp"
+        app:backColor="@color/gray"
+        app:frontColor="@color/blue"
+        app:mode="STROKE"
+        app:textColor="@color/red"
+        app:textSize="15sp"
+        />
+
+
+</LinearLayout>
+
+
+<!--    <com.conversation.wy.mycircleapplication.RoundProgressBar
+        android:id="@+id/barFill"
+        android:layout_width="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="100dp"
+        app:backColor="@color/gray_light"
+        app:frontColor="@color/blue"
+        app:mode="FILL"
+        app:textColor="@color/red"
+        app:textSize="15sp"
+        />-->
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/gray_light">
+
+    <TextView
+        android:layout_width="96dp"
+        android:layout_height="match_parent"
+        android:text="路由器任务"
+        android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="101dp"
+            android:layout_height="match_parent"
+            android:text="CPU"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:text="内存"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="网速"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+<LinearLayout
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    android:layout_marginTop="30dp">
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_weight="1">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="DLNA"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="9%"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="61.8%"
+        android:layout_weight="1"
+        android:textAlignment="center"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="0.03kb/s"
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="0.05kb/s"
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_weight="1"
+    android:layout_marginTop="20dp">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="爱奇艺视频"
+        android:layout_weight="1"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="0%"
+        android:layout_weight="1"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="3.3%"
+        android:layout_weight="1"
+        android:textAlignment="center"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="0.4kb/s"
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="0.5kb/s"
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_weight="1"
+    android:layout_marginTop="20dp">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="王者荣耀"
+        android:layout_weight="1"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="3%"
+        android:layout_weight="1"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="7.1%"
+        android:layout_weight="1"
+        android:textAlignment="center"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="0.5kb/s"
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="0.7kb/s"
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_weight="1"
+    android:layout_marginTop="20dp">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="快播视频"
+        android:layout_weight="1"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="20%"
+        android:layout_weight="1"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="0.5%"
+        android:layout_weight="1"
+        android:textAlignment="center"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="1.7kb/s"
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="2.0kb/s"
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

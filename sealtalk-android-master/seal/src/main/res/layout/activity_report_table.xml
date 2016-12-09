@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/time_solt"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="耗电分时统计"
+            android:textSize="20sp"
+            android:background="@color/lightblue"/>
+
+        <TextView
+            android:id="@+id/concrete_quantity"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:background="@color/lightblue"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

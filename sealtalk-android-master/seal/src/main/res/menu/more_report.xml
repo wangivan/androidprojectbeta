@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/more"
+        app:showAsAction="ifRoom|withText">
+        <menu>
+            <item
+                android:id="@+id/add_item1"
+                android:title="@string/day_report" />
+            <item
+                android:id="@+id/add_item2"
+                android:title="@string/month_report" />
+            <item
+                android:id="@+id/add_item3"
+                android:title="@string/year_report" />
+        </menu>
+    </item>
+
+</menu>

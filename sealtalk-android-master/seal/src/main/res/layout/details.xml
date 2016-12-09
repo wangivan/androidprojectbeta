@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="简述:"
+            android:textSize="25sp"/>
+
+
+        <EditText
+            android:layout_width="0sp"
+            android:layout_height="0sp" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="50sp"
+            android:text="一个高端数码项目团队"
+            android:textSize="20sp"
+
+            android:textColorHint="#AAAAAA"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:editable="false"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="状态:"
+            android:textSize="25sp"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="审核完成"
+            android:textSize="20sp"
+
+            android:textColorHint="#AAAAAA"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:editable="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="资质编号:"
+            android:textSize="25sp"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="1N989890000"
+            android:textSize="20sp"
+
+            android:textColorHint="#AAAAAA"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:editable="false"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="fill_parent"
+        android:layout_height="200dp">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="详细介绍:     "
+            android:textSize="25sp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我们是一个高端的大学数码研发团队，我们是由全球知名专家团队带领，拥有全国最棒的研发技术，希望和你一起开拓未来!"
+            android:textSize="20sp"
+
+            android:textColorHint="#AAAAAA"
+            android:scrollbars="vertical"
+            android:editable="false"
+           />
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="0sp"
+            android:text="137982"
+            android:visibility="invisible"
+            android:id="@+id/targetUserid"/>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="进入洽谈室"
+        android:background="#236B8E"
+        android:id="@+id/enterChatting"
+        ></Button>
+
+
+
+</LinearLayout>

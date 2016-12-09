@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/factoryname"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询时间" />
+
+        <EditText
+            android:id="@+id/inputDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:inputType="none" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="机器列表"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:textSize="25dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button android:text="全选" android:id="@+id/button1"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+        <Button android:text="撤消" android:id="@+id/button2"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+
+    <ListView android:id="@+id/listview" android:layout_height="300sp"
+        android:layout_width="fill_parent"
+        android:paddingTop="20dp"/>
+
+    <Button
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/SearchData"
+        android:text="查询"
+        />
+</LinearLayout>
