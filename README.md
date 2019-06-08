@@ -1,2 +1,3 @@
 # androidprojectbeta
-only as backup and trial area 
+only as backup and trial area
+test 
